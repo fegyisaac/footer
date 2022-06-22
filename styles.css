@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* position: relative; */
+    min-height: 100vh;
+    background: #2c08cc;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    min-width: 100vw;
+    color: #ffffff;
+    /* background-color: rgb(136, 140, 160); */
+    height: 275px;
+}
+
+.primary-footer{
+    padding: 10px 40px 10px 50px;
+    display: grid;
+    grid-template-columns: 200px 150px 100px 1fr 1fr 170px 70px;
+    grid-template-rows: 180px 20px 20px 20px;
+    grid-template-areas: 
+    "van van van van van van van"
+    "Studio Portland about . . twitter design"
+    "web hello journal . . instagram feint"
+    "Copyrite Copyrite Copyrite . . linkedin .";
+    grid-row-gap: 5px;
+}
+.span{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: .85em;
+    padding-top: 10px;
+}
+.span span{
+    display: block;
+    /* animation-delay: 2s; */
+    /* animation: h 1s forwards; */
+    border-radius:1px solid #2c08cc;
+}
+.primary-footer .bold{
+    font-weight: 600;
+}
+.primary-footer .copy{
+    font-size: 13px;
+}
+.item-1{
+    grid-area: van;
+}
+.item-2{
+    grid-area: Studio;
+}
+.item-3{
+    grid-area: web;
+}
+.item-4{
+    grid-area: Portland;
+}
+.item-5{
+    grid-area: hello;
+}
+.item-6{
+    grid-area: about;
+}
+.item-7{
+    grid-area: journal;
+}
+.item-8{
+    grid-area: twitter;
+}
+.item-9{
+    grid-area: instagram;
+}
+.item-10{
+    grid-area: linkedin;
+}
+.item-11{
+    grid-area: design;        
+}
+.item-12{
+    grid-area: feint;
+}
+.item-13{
+    grid-area: Copyrite;
+}
